@@ -1,0 +1,20 @@
+name: learning_Git
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.9
+#  - jupyterlab
+#  - numpy
+#  - matplotlib #=3.4.*
+#  - scipy
+#  - netcdf4
+#  - mpi4py
+#  - pyncview
+  - R=4.1
+  - r-base
+  - r-essentials
+  - julia
+#  - notebook
+#  - nb_conda_kernels
+#  - jupyter_contrib_nbextensions
