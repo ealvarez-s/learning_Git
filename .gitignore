@@ -1,0 +1,64 @@
+# =========================
+# Archivos del sistema
+# =========================
+.DS_Store        # macOS
+Thumbs.db        # Windows
+desktop.ini      # Windows
+*.swp            # Archivos temporales de Vim
+*.bak            # Copias de respaldo
+*.tmp            # Archivos temporales en general
+
+# =========================
+# Entornos virtuales
+# =========================
+venv/            # Python (virtualenv)
+.env             # Variables de entorno sensibles (como API keys)
+*.env
+
+# =========================
+# Compilados y binarios
+# =========================
+*.o
+*.out
+*.class
+*.exe
+*.pyc
+__pycache__/     # Python bytecode cache
+.julia/          # Julia package cache
+.rhistory        # R session history
+.Rproj.user/     # RStudio files
+
+# =========================
+# Node.js
+# =========================
+node_modules/    # Librerías de npm
+dist/            # Archivos generados en builds
+build/           # Carpeta de build (React, etc.)
+
+# =========================
+# Java
+# =========================
+*.jar
+target/
+
+# =========================
+# Logs
+# =========================
+*.log
+log/
+
+# =========================
+# Jupyter Notebooks (opcional)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VSCode / IDEs
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Git
+# =========================
+*.orig           # Archivos creados al resolver conflictos
