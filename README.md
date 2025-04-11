@@ -57,7 +57,7 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 📄 README.md → Esta guía
 
 ## 🛠️ Requisitos previos
-- Git instalado, compruebalo con git -h o git help git
+- Git instalado, compruebalo con git --version
 - Cuenta en GitHub (https://github.com/), requiere 2FA.
 - Clave ssh. Instrucciones: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account 
 
