@@ -29,7 +29,7 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 ### 🟨 Parte 2: Control de versiones en repositorios remotos (GitHub)
 
 **2.1 Introducción**
-- ¿Qué es GitHub (y GitLab, Bitbucket, etc.)?
+- ¿Qué es GitHub (y GitLab, etc.)?
 - Claves públicas y privadas (básico)
 
 **2.2 PRÁCTICA 1: Trabajo con tus repositorios propios (propietario)**
