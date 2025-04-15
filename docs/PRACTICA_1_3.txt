@@ -27,7 +27,7 @@ git commit -m "Actualizar archivos con contenido nuevo"
 git log --oneline
 
 
-✅ Criterios de éxito
+✅ Resultados del tercer ejercicio:
 Hemos modificado archivos, inspeccionado estado y cambios.
 Hemos hecho add/commit con las modificaciones.
 
@@ -47,5 +47,3 @@ git show <hash>
 git diff
 git diff <archivo>
 git diff <commit1> <commit2>
-
-

@@ -1,0 +1,77 @@
+PRACTICA 2_2
+Merge con conflicto (resolución manual)
+---------------------------------------
+## Crear un entorno con conflicto, dentro de tu repositorio:
+git checkout main
+echo "Línea original" > conflicto.txt
+git add conflicto.txt
+git commit -m "Crear archivo base para conflicto"
+
+## Crear y cambiar a una nueva rama
+git checkout -b rama-A
+
+## Edita el archivo conflicto.txt y cambia su contenido a:
+Cambio desde la rama A
+
+## Haz commit:
+git add conflicto.txt
+git commit -m "Cambio desde rama A"
+
+## Vuelve a main y crea una nueva rama:
+git checkout main
+git checkout -b rama-B
+## Fijate aqui que volvemos a main para crear la rama B desde alli, si la creamos desde A, B seria identica a A.
+
+## Edita conflicto.txt y cambia su contenido a:
+Cambio desde la rama B
+## Ademas elimina un archivo antiguo:
+rm notas.txt
+
+## Haz commit:
+git add conflicto.txt notas.txt
+git commit -m "Cambio desde rama B"
+
+## Vuelve a main y fusiona una de las ramas (por ejemplo, rama-B):
+git checkout main
+git merge rama-B
+
+## Ahora intenta fusionar rama-A:
+git merge rama-A
+## Aparecerá un conflicto, ya que ambos cambios modificaron la misma línea.
+
+## Para Resolver el conflicto de contenido, abre el archivo que lo genero:
+## Decide qué línea quieres conservar (o combina ambas), y elimina los símbolos <<<<<<<, =======, >>>>>>>.
+
+## Para Resolver el conflicto de estructura, decide si quieres:
+## conservar el archivo:
+git restore --staged notas.txt
+git add notas.txt
+## o eliminarlo:
+git rm notas.txt
+
+## Guarda los cambios y haz:
+git add conflicto.txt 
+git commit -m "Resolver conflictos estructurales y de contenido entre A y B"
+
+## Confirma la resolucion con:
+git log --oneline --graph
+
+
+✅ Resultados del quinto ejercicio:
+Hemos practicado la creacion de ramas y aprendido a fusionarlas sin conflictos.
+Hemos resulto manualmente un conflicto de contenido.
+Hemos resuelto un conflicto en estructura (archivo eliminado).
+
+
+
+## Extra: formas de Resolver Conflictos Automáticamente en Git
+1. Cuando ya estás en medio de un conflicto, Para aceptar la versión de la rama que estás fusionando:
+git checkout --theirs archivo.txt
+Para aceptar tu versión local (rama actual):
+git checkout --ours archivo.txt
+
+2. Antes del conflicto, usar estrategias de merge
+git merge -X theirs rama  ## Aplica siempre los cambios de la rama que estás fusionando.
+git merge -X ours rama ## Aplica los cambios de la rama actual (descarta los de la otra rama).
+
+## Las resoluciones automáticas son útiles para conflictos simples o repetitivos, pero en conflictos más complejos, es mejor revisarlos manualmente.

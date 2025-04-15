@@ -1,0 +1,52 @@
+PRACTICA 2_1
+Introduccion a ramas
+--------------------
+## Como ver las ramas existentes. La actual aparecera con un asterisco (*).
+git branch
+
+## Crea una nueva rama:
+git branch mejora-readme
+
+## Y cambiate a ella:
+git checkout mejora-readme
+
+## O haz las dos cosas a la vez:
+git checkout -b mejora-readme
+
+## Comprueba de nuevo las ramas:
+git branch
+
+## Haz cambios en esta rama:
+echo "Este proyecto forma parte de un taller de Git." >> README.md
+git add README.md
+git commit -m "Anadir contexto al README en rama mejora-readme"
+
+## Para fusionar ramas, debes estar en la rama que va a recibir los cambios, así que vuelve a la rama principal:
+git checkout main
+
+## Quieres traer los cambios de mejora-readme, así que el flujo sería:
+git merge mejora-readme
+
+## Git no permite especificar ambas ramas en el comando, siempre operas desde una rama concreta. Pero si te interesa comparar ramas sin fusionarlas (por ejemplo, para revisar diferencias), puedes usar:
+git diff main..mejora-readme
+
+## Elimina la rama si ya no la necesitas:
+git branch -d mejora-readme
+
+
+✅ Resultados del cuarto ejercicio:
+Hemos creado una nueva rama y consultado las existentes.
+Somos capaces de movernos entre ramas y mofificarlas.
+Hemos fusionado ramas.
+
+
+## Tips para el dia a dia con ramas
+git branch -av
+# te muestra:
+Las ramas locales
+Las ramas remotas
+El ultimo commit de cada rama (su hash abreviado y mensaje)
+
+## ¿Y si me equivoco?
+git merge --abort
+## solo funciona si no has finalizado el proceso aún
