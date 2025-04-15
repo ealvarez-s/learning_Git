@@ -1,0 +1,28 @@
+Taller git & GitHub
+------------------------------------------
+Vamos a utilizar git como software de control de versiones, y GitHub como plataforma remota para alojar los repositorios.
+Aunque existen alternativas gráficas como GitHub Desktop, nosotros trabajaremos con ellos desde la línea de comandos,
+así que los requisitos previos para seguir el taller serán:
+
+1. Tener acceso a un terminal, el que quieras.
+En tu ordenador: bash in iOs, PowerShell in Windows, Anaconda Prompt, RStudio terminal…
+O en un servidor, donde probablemente git ya esté instalado.
+
+2. Instalar git si no lo está ya.
+Compruébalo con git --version
+Instrucciones:
+https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git 
+git -h (información básica acerca del comando git)
+git help git (abre el manual html)
+
+3. Crear una cuenta de usuario en GitHub si no la tienes: https://github.com/
+El username será tu identificador para todo. Además de la contraseña, GitHub te pedirá configurar otro método de identificación adicional.
+
+4. Username y password con autentificación en dos pasos (2FA) o passkey:
+El 2FA es obligatorio desde marzo de 2023. Elige el método que prefieras, yo personalmente uso un passkey en el móvil.
+Instrucciones: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github 
+
+5. Crear un par de claves (pública y privada) SSH y añadir la pública a GitHub:
+Esto te permitirá conectar tus repositorios locales con los remotos, hacerlo con usuario y contraseña ya no es posible. Instrucciones:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+Si no completas este último paso, no te preocupes, lo hacemos durante el taller.

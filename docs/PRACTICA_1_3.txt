@@ -1,0 +1,51 @@
+PRACTICA 1_3
+Modifica, verifica y actualiza tu repositorio
+---------------------------------------------
+## Modifica uno o más archivos existentes:
+## Edita el archivo README.md o cualquiera de los que creaste antes. Por ejemplo:
+echo "Este es mi primer proyecto con Git." >> README.md
+echo "print('Hola Git!')" >> script.py
+
+## Comprueba el estado del repositorio:
+git status
+## Verás los archivos modificados en rojo, bajo “Changes not staged for commit”.
+
+## Compara el contenido antes y después del cambio:
+git diff
+## solo quieres ver las diferencias de un archivo específico:
+git diff script.py
+
+## Añade los archivos modificados al staging:
+git add README.md
+git add README.md script.py
+git add .
+
+## Haz un nuevo commit:
+git commit -m "Actualizar archivos con contenido nuevo"
+
+## Revisa el historial de commits:
+git log --oneline
+
+
+✅ Criterios de éxito
+Hemos modificado archivos, inspeccionado estado y cambios.
+Hemos hecho add/commit con las modificaciones.
+
+
+## Comandos útiles para revisar cambios en Git
+## ¿Qué cambios se han hecho en el repositorio?
+
+git log
+git log --oneline
+git log --graph --oneline --all
+git log <archivo>
+git log -p -- <archivo>
+
+## ¿Qué contiene un cambio concreto?
+git show
+git show <hash>
+git diff
+git diff <archivo>
+git diff <commit1> <commit2>
+
+

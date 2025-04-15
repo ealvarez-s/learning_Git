@@ -1,0 +1,52 @@
+PRACTICA 1_2
+Seguimiento de archivos y primer commit
+---------------------------------------
+## Dentro del repositorio que has creado, comprueba su estado:
+cd mi-primer-repo
+git status
+
+## Crea algunos archivos adicionales, y vuelve a comprobar el estado:
+touch script.py notas.txt datos.csv
+git status
+
+## Veras que los archivos que has creado aparecen como untracked.
+## Eso significa que no estan bajo control de versiones. Añadelos con:
+git add README.md (solo un archivo)
+git add README.md script.py (varios archivos)
+git add . (todo lo que está en el directorio actual y subdirectorios)
+
+## Y vuelve a comprobar el estado con:
+git status
+
+## Haz tu primer commit:
+git commit -m "Primer commit: añadir README.md"
+
+## Revisa el historial:
+git log
+
+## Puedes usar q para salir del historial cuando termines de mirarlo
+
+
+✅ Resultados del segundo ejercicio:
+Hemos añadido archivos al control y hemos hecho commit.
+Sabemos comprobar el estado del repo y comprobar el historial de commits.
+
+
+#### Cómo deshacer cosas en Git:
+
+## Para quitar archivos de la zona de preparación (staging):
+## Opción 1: quitar un archivo concreto:
+git restore --staged archivo.txt
+## Opción 2: quitar todos los archivos del staging: 
+git restore --staged .
+
+## Modificar el último commit
+## Corregir solo el mensaje del commit más reciente:
+git commit --amend -m "Nuevo mensaje más claro"
+
+## Eliminar el último commit (pero conservar los cambios en tu directorio):
+git reset --soft HEAD~1
+## Esto borra el commit, pero los cambios siguen listos para hacer un nuevo commit.
+
+## Eliminar el último commit y quitar también del staging:
+git reset --mixed HEAD~1

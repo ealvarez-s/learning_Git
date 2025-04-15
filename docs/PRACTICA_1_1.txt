@@ -1,0 +1,42 @@
+PRACTICA 1_1
+Configuracion basica e iniciar un repositorio
+---------------------------------------------
+## Comprueba la configuracion con:
+git config --list
+
+## Sustituye los datos entrecomillados por los tuyos y ejecuta los siguientes comandos:
+git config --global user.name "Tu Nombre"
+git config --global user.email "tucorreo@ejemplo.com"
+
+## Esto le dice a Git quien eres. Esta info se guardara en todos tus commits y como hemos usado el argumento --global, en todos tus repositorios. Repite:
+git config --list
+## y veras como aparece la informacion adicional.
+
+## Crea una carpeta para tu repositorio:
+mkdir mi-primer-repo
+cd mi-primer-repo
+
+## Inicialo como repositorio Git:
+git init
+
+## Crea un archivo dentro del repositorio
+echo "# Mi primer repositorio" > README.md
+
+## Verifica el estado del repositorio:
+git status
+
+## Ahora vamos a cambiar algunos aspectos de configuracion, solo para este repositorio:
+git config user.name "Tu Nombre (local)"
+git config user.email "tunuevocorreo@ejemplo.com"
+
+## Comprueba tu nueva configuracion local con:
+git config --local --list
+
+## y comprueba la global que configuramos antes con:
+git config --global --list
+
+
+✅ Resultados del primer ejercicio:
+Configuracion global y local hecha correctamente.
+Repositorio inicializado.
+Un archivo ha sido creado pero aún no está bajo control de versiones.
