@@ -10,42 +10,44 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 
 ### 🟦 Parte 1: Control de versiones en repositorios locales (Git)
 
-**1.1 Introducción**  
+**Introducción a git**
 ¿Qué es un sistema de control de versiones? ¿Por qué usar Git?
 
-**1.2 PRÁCTICA 1: Iniciar, configurar y controlar un repositorio local**
+**PRÁCTICA 1: Iniciar, configurar y controlar un repositorio local**
 - Ejercicio 1_1. Configuración básica e iniciar un repositorio
 - Ejercicio 1_2. Seguimiento de archivos y primer commit  
 	extra: Cómo deshacer cosas en Git
 - Ejercicio 1_3. Modificar, verificar y actualizar repositorio  
 	extra: Comandos útiles para revisar cambios
+- Buenas prácticas al hacer commits
 
-**1.3 PRÁCTICA 2: Trabajo en un repositorio local**
+**PRÁCTICA 2: Trabajo en un repositorio local**
 - Ejercicio 2_1. Introducción al trabajo con ramas
 - Ejercicio 2_2. Merge con conflicto (resolución manual)  
 	extra: Resolver conflictos automáticamente
+- Buenas prácticas al trabajar con ramas
 
 ---
 
 ### 🟨 Parte 2: Control de versiones en repositorios remotos (GitHub)
 
-**2.1 Introducción**
-- ¿Qué es GitHub (y GitLab, etc.)?
-- Claves públicas y privadas (básico)
+**Introducción a GitHub**
+¿Qué es GitHub (y GitLab, etc.)? Aspectos básicos y claves públicas y privadas
 
-**2.2 PRÁCTICA 1: Trabajo con tus repositorios propios (propietario)**
-- Crear un repositorio en GitHub
-- Subir el repositorio local al remoto (`git remote`, `git push`)
-- Configurar visibilidad y añadir colaboradores
+**PRÁCTICA 3: Trabajo con tus repositorios propios (propietario)**
+- Ejercicio 3_1. Crear un repositorio remoto y sincronizarlo con el local
+- Ejercicio 3_2. Sincronizar cambios (`git push`,`git pull`)
+- Ejercicio 3_3. Trabajar con ramas remotas
+- Buenas prácticas: usar etiquetas (`git tag`)
 
-**2.3 PRÁCTICA 2: Trabajo con repositorios ajenos (colaborador/a)**
-- Clonar repositorios (`git clone`)
-- Cambiar de rama y hacer `merge`
-- Simular contribuciones entre compañer@s
+**PRÁCTICA 4: Trabajo con repositorios ajenos (colaborador/a)**
+- Ejercicio 4_1. Clonar repositorios (`git clone`)  
+	extra: Configurar visibilidad y añadir colaboradores
+- Ejercicio 4_2. Trabajar colaborativamente: simular contribuciones entre compañer@s
+- Ejercicio 4_3. Crear conflicto
+- Buenas prácticas: pull requests (cómo proponer cambios)
 
-**2.4 Extras útiles**
-- Usar etiquetas (`git tag`)
-- Pull Requests (cómo proponer cambios)
+**Extras útiles**
 - GitHub Projects y Wiki
 - Cómo citar tus repos usando Zenodo
 
@@ -53,7 +55,7 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 
 ## 🗂️ Estructura del repositorio
 📁 / → Ejemplos de código en varios lenguajes
-📁 /docs → Archivos de documentación o ejercicios
+📁 /docs → Archivos de documentación y ejercicios
 📄 .gitignore → Archivos que Git debe ignorar
 📄 README.md → Esta guía
 
