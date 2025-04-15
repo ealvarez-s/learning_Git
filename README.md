@@ -14,16 +14,19 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 ¿Qué es un sistema de control de versiones? ¿Por qué usar Git?
 
 **1.2 PRÁCTICA 1: Iniciar, configurar y controlar un repositorio local**
-- Ejercicio 1_1. Configuracion basica e iniciar un repositorio
+- Ejercicio 1_1. Configuración básica e iniciar un repositorio
 - Ejercicio 1_2. Seguimiento de archivos y primer commit
-    extra: Cómo deshacer cosas en Git
+
+      extra: Cómo deshacer cosas en Git
 - Ejercicio 1_3. Modificar, verificar y actualizar repositorio
-    extra: Comandos útiles para revisar cambios
+
+      extra: Comandos útiles para revisar cambios
 
 **1.3 PRÁCTICA 2: Trabajo en un repositorio local**
-- Ejercicio 2_1. Introducción a ramas (`git branch`, `git checkout -b`)
+- Ejercicio 2_1. Introducción al trabajo con ramas
 - Ejercicio 2_2. Merge con conflicto (resolución manual)
-    extra: Resolver conflictos automáticamente
+
+      extra: Resolver conflictos automáticamente
 ---
 
 ### 🟨 Parte 2: Control de versiones en repositorios remotos (GitHub)
