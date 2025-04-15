@@ -11,19 +11,20 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 ### 🟦 Parte 1: Control de versiones en repositorios locales (Git)
 
 **Introducción a git**
-¿Qué es un sistema de control de versiones? ¿Por qué usar Git?
+¿Qué es un sistema de control de versiones? ¿Por qué usar Git?  
+Areas de trabajo. Principales flujos de trabajo. Tipos de archivos.
 
 **PRÁCTICA 1: Iniciar, configurar y controlar un repositorio local**
-- Ejercicio 1_1. Configuración básica e iniciar un repositorio
-- Ejercicio 1_2. Seguimiento de archivos y primer commit  
+- Ejercicio 1_1. Configuración básica e iniciar un repositorio (`git config`,`git init`)
+- Ejercicio 1_2. Seguimiento de archivos y primer commit (`git add`,`git commit`)  
 	extra: Cómo deshacer cosas en Git
-- Ejercicio 1_3. Modificar, verificar y actualizar repositorio  
-	extra: Comandos útiles para revisar cambios
+- Ejercicio 1_3. Modificar, verificar y actualizar repositorio (`git status`)  
+	extra: Comandos útiles para revisar cambios (`git diff`)
 - Buenas prácticas al hacer commits
 
 **PRÁCTICA 2: Trabajo en un repositorio local**
-- Ejercicio 2_1. Introducción al trabajo con ramas
-- Ejercicio 2_2. Merge con conflicto (resolución manual)  
+- Ejercicio 2_1. Introducción al trabajo con ramas (`git branch`,`git checkout`) 
+- Ejercicio 2_2. Merge con conflicto (resolución manual) (`git merge`)  
 	extra: Resolver conflictos automáticamente
 - Buenas prácticas al trabajar con ramas
 
@@ -32,9 +33,10 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 ### 🟨 Parte 2: Control de versiones en repositorios remotos (GitHub)
 
 **Introducción a GitHub**
-¿Qué es GitHub (y GitLab, etc.)? Aspectos básicos y claves públicas y privadas
+¿Qué es una forja (GitHub, GitLab, etc.)?  
+Elementos básicos: repositorios, usuarios, organizaciones. Visibilidad y seguridad. Claves públicas y privadas.
 
-**PRÁCTICA 3: Trabajo con tus repositorios propios (propietario)**
+**PRÁCTICA 3: Trabajo con tus repositorios propios (propietari@)**
 - Ejercicio 3_1. Crear un repositorio remoto y sincronizarlo con el local
 - Ejercicio 3_2. Sincronizar cambios (`git push`,`git pull`)
 - Ejercicio 3_3. Trabajar con ramas remotas
@@ -45,7 +47,8 @@ Trabajaremos con ejemplos en distintos lenguajes de programación para simular s
 	extra: Configurar visibilidad y añadir colaboradores
 - Ejercicio 4_2. Trabajar colaborativamente: simular contribuciones entre compañer@s
 - Ejercicio 4_3. Crear conflicto
-- Buenas prácticas: pull requests (cómo proponer cambios)
+- Buenas prácticas: pull requests (cómo proponer cambios)  
+	extra: bifurcar un repositorio
 
 **Extras útiles**
 - GitHub Projects y Wiki
