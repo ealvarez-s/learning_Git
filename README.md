@@ -43,11 +43,10 @@ Elementos básicos: repositorios, usuarios, organizaciones. Visibilidad y seguri
 - Buenas prácticas: usar etiquetas (`git tag`)
 
 **PRÁCTICA 4: Trabajo con repositorios ajenos (colaborador/a)**
-- Ejercicio 4_1. Clonar repositorios (`git clone`)  
+- Ejercicio 4_1. Clonar un repositorio remoto (`git clone`)  
 	extra: Configurar visibilidad y añadir colaboradores
-- Ejercicio 4_2. Trabajar colaborativamente: simular contribuciones entre compañer@s
-- Ejercicio 4_3. Crear conflicto
-- Buenas prácticas: pull requests (cómo proponer cambios)  
+- Ejercicio 4_2. Trabajo colaborativo en un repositorio común 
+- Ejercicio 4_3. Resolver conflictos y hacer Pull Requests  
 	extra: bifurcar un repositorio
 
 **Extras útiles**
