@@ -1,0 +1,43 @@
+PRACTICA 4_2
+Trabajo colaborativo en un repositorio común
+--------------------------------------------
+
+## Primero vamos a simular contribuciones individuales:
+## Os voy a crear una carpeta que se llama participantes/
+## Haced:
+git pull
+## y moveos a ella. Dentro de esa carpeta, cada uno cread un archivo con algo que os identifique:
+echo "¡Hola desde Git!" > participantes/eva.txt
+## Anadidlo y haced commit, si podeis anadid un mensaje que os identifique tambien:
+git add participantes/eva.txt
+git commit -m "Añadir archivo de Eva en participantes"
+
+## Antes de subirlo, aseguraos de hacer git pull, porque todos nos vamos a poner a subir cosas a la vez y quereis estar seguros de tener los cambios ajenos:
+git pull
+git push
+
+## Ahora echamos un ojo al repo remoto en GitHub y deberiamos ver vuestros archivos y vuestros commits.
+
+
+## Ahora vamos a editar un archivo común entre varios, es decir empezar a rozar los conflictos.
+## Abrid el archivo compartido lista.txt y anadid vuestro nombre o un mensaje propio.
+## Añadidlo, haded commit y push como antes:
+git add lista.txt
+git commit -m "Ana añade su nombre a lista.txt"
+git pull   # por si alguien lo tocó ya
+git push
+
+## Como veis, antes de hacer push, hacemos pull, esto es muy importante porque evita conflictos innecesarios, los cambios que todos hemos hecho son perfectamente compatibles aunque esten en el mismo archivo. Si mantenemos actualizado el repo y solo hacemos push cuando estemos seguros de que tenemos todos los cambios previos hechos por los demás, no debería haber conflictos.
+
+
+✅ Resultados del decimo ejercicio:
+Cada persona ha añadido su propio archivo personal en la carpeta participantes/.
+Todos han editado el mismo archivo (lista.txt) sin que se generen conflictos (aún).
+Han practicado la regla de oro: pull antes de push.
+
+
+## Buenas prácticas al colaborar en equipo
+# Haz pull antes de cada push.
+# Usa mensajes de commit claros.
+# Coordínate con tus compis si vais a tocar lo mismo.
+# Si algo falla en el push, lee el mensaje del error: normalmente solo necesitas hacer git pull y resolver cambios.

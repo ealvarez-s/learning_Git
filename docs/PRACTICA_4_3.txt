@@ -1,0 +1,58 @@
+PRACTICA 4_3
+Resolver conflictos de manera manual y hace Pull Requests
+---------------------------------------------------------
+
+## Vamos a provocar un conflicto real e intentar resolverlo.
+## Si os acordais, en el ultimo ejercicio de la primera parte resolvimos un conflicto que se generaba por dos modificaciones en el mismo archivo.
+## Aqui puede suceder lo mismo. Por ejemplo, editad todos la primera linea del archivo lists.txt e intentad hacer add, commit y push.
+
+## Todos los que no seais el primero, recibireis senales de conflicto.
+## Teneis que hacer:
+git pull
+## Edita el archivo para dejar solo la versión correcta o combinarlas.
+## Guarda y confirma la resolución:
+git add lista.txt
+git commit -m "Resolver conflicto en lista.txt"
+git push
+
+
+## Hasta ahora hemos trabajado directamente en main.
+## Pero como vimos en la primera parte del taller, git nos permite trabajar en ramas que se desarrollar y en algun momento pueden fusionarse.
+
+## Primero, cada uno vamos a crear nuestra propia rama a partir de main:
+git checkout -b nombre-usuario-cambio1
+## Haz algun cambio:
+git add
+git commit 
+
+## Y sube tu rama al remoto:
+git push origin nombre-usuario-cambio1
+
+## Veamos ahora las ramas disponibles en el repositorio, incluidas remotas y locales:
+git branch -av
+
+## Imaginemos que ahora quieres moverte a la rama que ha creado un companero.
+## Hasta ahora lo que hemos hecho es crear nosotros ramas locales y sincronizarlas al remoto, pero la rama de un companero para nosotros es exclusivamente remota.
+## Para moverte a ella, recuerda:
+git checkout remote_branch_name
+## Si esa rama existe en el remoto pero no localmente, Git la detecta y hace automáticamente fetch si hace falta, crea la rama local, la posiciona en el último commit de origin/feature-x y la enlaza con el remoto.
+
+## Si tu version de git es anterior a (2.23), Git no hace todo esto automaticamente y tienes que especificar:
+git checkout -b feature-x origin/feature-x
+
+
+## Supongamos ahora que seguimos trabajando en nuestras ramas, y llega un punto en el que nuestro desarrollo nos satisface y queremos que forme parte de la rama principal.
+## Podemos usar git merge si estámos trabajando exclusivamente con ramas locales, tal y como hicimos en la primera parte del taller.
+
+## Pero si estamos en GitHub, y queremos que los cambios se integren formalmente en la rama remota principal (main, develop, etc.), debemos abrir un Pull Request en GitHub.
+✅ "Compare & pull request"
+Escribe un título y descripción para tu PR.
+Dale a Create Pull Request.
+
+## Yo o un/a compañer@ con permisos, lo revisara y hara:
+✅ Merge pull request
+
+
+✅ Resultados del undecimo ejercicio:
+Hemos provocado un conflicto de edición dentro de una rama. Lo hemos resuelto manualmente, y hecho commit del archivo ya resuelto.
+Cada persona ha creado una rama, hecho cambios y abierto un PR. El cambio ha sido revisado y fusionado correctamente en main.
