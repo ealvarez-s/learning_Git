@@ -1,0 +1,33 @@
+PRACTICA 3_1
+Crear un repositorio remoto y sincronizarlo con el local
+--------------------------------------------------------
+
+## Vete a GitHub.com, a Repositories y haz click en New.
+## Asigna un nombre a tu repositorio y una descripcion corta.
+## Elige si quieres que sea publico o privado (para este taller, cualquiera vale).
+## El resto dejalo como esta y dale a Create repository.
+
+## Si creas el repositorio vacío, GitHub te mostrará instrucciones para enlazarlo con un repo local existente (como el nuestro).
+
+## La primera opcion que te da es lo que ya hemos hecho, crear un repositorio desde cero y añadir la ruta a este repositorio remoto.
+
+## La segunda es la que vamos a utilizar. Usa estas instrucciones desde tu terminal en la carpeta de tu proyecto local:
+git remote add origin git@github.com:<username>/<reponame>.git
+git branch -M main
+## Con esto, le estas diciendo a tu repositorio local, que su colega remoto sera el que acabamos de crear y que debe usar main como rama principal (que es la unica que hay de momento).
+
+## Si ahora comprobais la informacion de vuestro repo local con:
+git config --list
+## vereis que se ha anadido el campo remote.origin.url 
+## Ya teneis los repos sincronizados.
+
+## Si al crear el repositorio añadiste un README, LICENSE o .gitignore, GitHub ya lo habrá inicializado con un commit, y no verás las instrucciones para conectar con uno local. Aun así, el procedimiento es el mismo: usa git remote add origin <url> para establecer el vínculo.
+
+## Teclead la ultima instruccion y ved que pasa:
+git push -u origin main
+
+
+✅ Resultados del sexto ejercicio:
+Has creado un repositorio remoto en GitHub.
+Has conectado tu repositorio local con el remoto.
+Has subido tu historial de commits local a GitHub usando git push

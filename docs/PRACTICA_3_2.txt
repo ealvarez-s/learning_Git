@@ -1,0 +1,37 @@
+PRACTICA 3_2
+Sincronizar cambios (git push,git pull)
+---------------------------------------
+
+## Vamos a ver como hacer fluir los cambios en ambos sentidos.
+
+## Primero modifica alguno de los ficheros en tu repo local y haz un commit siguiento un flujo de trabajo basico. Recuerda:
+git add <archivo modificado>
+git commit -m 'mensaje'
+
+# Sube los cambios a GitHub:
+git push
+
+## Notad que la primera vez que hicimos push, usamos:
+git push -u origin main
+## pero en las veces sucesivas ya no es necesario.
+
+## Con esto, completamos el flujo de trabajo mas frecuente:
+## git add -> git commit -> git push
+
+## Ahora, ve a GitHub y verifica que tus cambios están allí.
+
+
+## Ahora vamos a ver como recuperar los cambios del repo remoto al repositorio local.
+## Ve al repositorio en GitHub. Abre el archivo README.md y haz clic en el lápiz ✏️ para editarlo directamente en la web.
+## Haz clic en Commit changes.
+
+## Ahora vuelve a tu terminal y sincroniza los cambios remotos con tu copia local:
+git pull
+
+## Si abres el archivo modificado, verás los cambios que hiciste en GitHub reflejados localmente.
+## git pull puede aceptar varios argumentos que modifican su comportamiento, no vamos a entrar en ellos en este taller.
+
+
+✅ Resultados del septimo ejercicio:
+Has hecho cambios locales, verificado su estado con git status, y los has subido con git push.
+Has editado el repositorio directamente desde GitHub y sincronizado esos cambios con git pull.

@@ -1,0 +1,77 @@
+PRACTICA 3_3
+Trabajar con ramas remotas
+--------------------------
+
+## Vamos a crear una rama local como aprendimos antes y subir esa rama al repositorio remoto.
+
+## Crea una nueva rama local para trabajar en una funcionalidad nueva. Recuerda:
+git checkout -b <nueva rama>
+
+## Haz algún cambio simple en esta rama (por ejemplo, crea o edita un archivo).
+
+## Añade y haz commit como siempre:
+git add <archivo modificado>
+git commit -m 'mensaje'
+
+## Sube tu nueva rama al remoto:
+git push -u origin <nueva rama>
+## El -u configura la rama local para rastrear la rama remota con el mismo nombre.
+
+## Recordais como comprobar las ramas existentes y en cual estamos:
+git branch -av
+
+## Para eliminar una rama remota (olo si ya no se necesita):, puedes hacer:
+git push origin --delete <nueva rama>
+
+
+#### Buenas prácticas: añadir etiquetas (tags) para marcar versiones importantes.
+
+## Las etiquetas permiten identificar puntos importantes en la historia del proyecto.
+## Puedes añadir una etiqueta a un commit (normalmente al último), con:
+git tag v1.0
+
+## Una vez creada, súbela a GitHub con:
+git push origin v1.0
+## o si tienes varias etiquetas y quieres subirlas todas:
+git push origin --tags
+
+## Ver todas las etiquetas del repositorio:
+git tag
+
+## Y para eliminarla localmente:
+git tag -d v1.0
+## y en el remoto:
+git push origin --delete tag v1.0
+
+
+## Los tags en Git funcionan como marcadores permanentes en la historia del repositorio Puedes usarlos para:
+# Ver cómo estaba el proyecto en ese punto:
+git show v1.0
+
+# Volver temporalmente a una versión anterior (modo lectura)
+git checkout v1.0
+
+# Crear una nueva rama desde una versión antigua:
+git checkout -b nueva-rama-desde-v1.0 v1.0
+
+# o volver atrás definitivamente:
+git reset --hard v1.0
+
+
+✅ Resultados del octavo ejercicio:
+Has aprendido a crear y subir una rama al repositorio remoto.
+Has aprendido a usar tags para marcar versiones importantes y volver a ellas.
+
+
+## Otras buenas prácticas al trabajar con repositorios remotos::
+
+# Crear ramas con prefijos (buena práctica en proyectos colaborativos):
+# feature/, fix/, hotfix/, test/, etc.
+
+# Commits claros: Usa mensajes breves pero descriptivos.
+
+# Sincroniza a menudo: Usa git pull con regularidad para evitar conflictos grandes.
+
+# Evita subir archivos innecesarios: Usa .gitignore para excluir archivos temporales, de configuración local, etc.
+
+# Acuerdate de hacer push después de commit: No dejes commits colgados sin subir si estás colaborando.
