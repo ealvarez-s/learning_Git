@@ -29,9 +29,16 @@ __pycache__/     # Python bytecode cache
 .Rproj.user/     # RStudio files
 
 # =========================
+# Archivos comprimidos
+# =========================
+*.tar.gz
+*.tar.xz
+*.zip
+
+# =========================
 # Node.js
 # =========================
-node_modules/    # Librerías de npm
+node_modules/    # LibrerÃ­as de npm
 dist/            # Archivos generados en builds
 build/           # Carpeta de build (React, etc.)
 
