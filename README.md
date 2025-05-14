@@ -1,17 +1,17 @@
-# 🧠 Taller de Introducción a Git y GitHub
+# 🧠 Taller de Introducción a git y GitHub
 
 ¡Bienvenid@ al taller de control de versiones!  
-Este repositorio es el entorno de práctica para aprender a usar **Git** y **GitHub**.  
-Trabajaremos con ejemplos en distintos lenguajes de programación para simular situaciones reales de trabajo.
+Este repositorio es el entorno de práctica para aprender a usar **git** y **GitHub**.  
+Trabajaremos con archivos de ejemplo para simular situaciones reales de trabajo.
 
 ---
 
 ## 📚 Contenidos del taller
 
-### 🟦 Parte 1: Control de versiones en repositorios locales (Git)
+### 🟦 Parte 1: Control de versiones en repositorios locales (git)
 
 **Introducción a git**
-¿Qué es un sistema de control de versiones? ¿Por qué usar Git?  
+¿Qué es un sistema de control de versiones? ¿Por qué usar git?  
 Areas de trabajo. Principales flujos de trabajo. Tipos de archivos.
 
 **PRÁCTICA 1: Iniciar, configurar y controlar un repositorio local**
@@ -58,11 +58,11 @@ Elementos básicos: repositorios, usuarios, organizaciones. Visibilidad y seguri
 ## 🗂️ Estructura del repositorio
 📁 / → Ejemplos de código en varios lenguajes
 📁 /docs → Archivos de documentación y ejercicios
-📄 .gitignore → Archivos que Git debe ignorar
+📄 .gitignore → Archivos que git debe ignorar
 📄 README.md → Esta guía
 
 ## 🛠️ Requisitos previos
-- Git instalado, compruebalo con git --version
+- git instalado, compruébalo con git --version
 - Cuenta en GitHub (https://github.com/), requiere 2FA.
-- Clave ssh. Instrucciones: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account 
+- Generar un par de claves ssh y añadirlas al ssh-agent. Instrucciones: https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
 
