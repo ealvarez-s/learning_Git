@@ -65,4 +65,3 @@ Elementos básicos: repositorios, usuarios, organizaciones. Visibilidad y seguri
 - git instalado, compruébalo con git --version
 - Cuenta en GitHub (https://github.com/), requiere 2FA.
 - Generar un par de claves ssh y añadirlas al ssh-agent. Instrucciones: https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
-
