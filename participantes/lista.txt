@@ -1,6 +1,7 @@
-¡Hola desde Git!
+﻿¡Hola desde Git!
 Añadir Eva en lista participantes
 Añadir Paula en lista participantes
 Añadir Alejandro en lista participantes
 Añadir Gloria en lista participantes
 Añadir Carmen en lista participantes
+
