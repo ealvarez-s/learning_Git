@@ -1,1 +1,1 @@
-﻿¡Hola desde Git!
+¡Hola desde git!
