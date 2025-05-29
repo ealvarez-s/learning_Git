@@ -1,14 +1,7 @@
 ¡Hola desde Git!
 Añadir Eva en lista participantes
-<<<<<<< HEAD
-
-=======
 Añadir Paula en lista participantes
 Añadir Alejandro en lista participantes
-<<<<<<< HEAD
->>>>>>> 002a782c6e10af9fe9b9c2075c40fdb6623f9a17
-=======
 Añadir Gloria en lista participantes
 Añadir Carmen en lista participantes
->>>>>>> ebddaf0429fdb18b25066eb708a9b16ed7edf86f
 Añadir Florencio en lista de participantes
