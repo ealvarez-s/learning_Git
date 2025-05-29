@@ -4,8 +4,5 @@ Añadir Paula en lista participantes
 Añadir Alejandro en lista participantes
 Añadir Gloria en lista participantes
 Añadir Carmen en lista participantes
-<<<<<<< HEAD
 Añadir Pili en lista participantes
-=======
 Añadir Florencio en lista de participantes
->>>>>>> aad17eab306b499425d2566ed5d7804b7fae466f
